@@ -1,0 +1,246 @@
+
+@font-face {
+  font-family: Intrepid;
+  src: url("../../../public/Intrepid.ttf"); /* TTF file for CSS3 browsers */
+}
+@font-face {
+  font-family: baskvill;
+  src: url("../../../public/BASKVILL.ttf"); /* TTF file for CSS3 browsers */
+}
+
+
+#header_1 {
+    width: 98%;
+    margin: auto;
+    padding-top: 1.5vw;
+    display: flex;
+    overflow: hidden;
+    position: sticky !important;
+    padding-bottom: 1vw;
+    top: 0px;
+    z-index: 1000;
+  }
+  
+  #header_background {
+    width: 100%;
+    height: 7vw;
+    margin-top: -10vw;
+    background-color: #fdfbf4;
+    position: fixed;
+    transition: 1s;
+    z-index: 100;
+  }
+  
+  #header_1::after {
+    content: "";
+    width: 100%;
+    height: 0.5px;
+    transition: 1s;
+    background: white;
+    position: absolute;
+    transform: scaleX(1);
+    animation: heading;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    transition-timing-function: linear;
+    top: 99%;
+  }
+  
+  @keyframes heading {
+    0% {
+      left: -200%;
+    }
+  
+    100% {
+      left: 0px;
+    }
+  }
+  
+  @keyframes category {
+    0% {
+      top: 60px;
+    }
+  
+    100% {
+      top: 0px;
+    }
+  }
+  
+  #category {
+    display: flex;
+    position: relative;
+    top: 0.9vw;
+  }
+  
+  #category ul {
+    display: flex;
+    margin-left: 2vw;
+  }
+  
+  #category li {
+    margin-right: 1.5vw;
+    font-size: 1.3vw;
+    font-family: Intrepid;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+  }
+  
+  .cat {
+    transition: 1s;
+  }
+  
+  li:first-child .cat {
+    animation: category;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    transition-timing-function: linear;
+    top: 100px;
+  }
+  
+  li:nth-child(2) .cat {
+    animation: category;
+    animation-duration: 1.7s;
+    animation-fill-mode: forwards;
+    transition-timing-function: linear;
+  }
+  
+  li:nth-child(3) .cat {
+    animation: category;
+    animation-duration: 1.9s;
+    animation-fill-mode: forwards;
+    transition-timing-function: linear;
+  }
+  
+  li:nth-child(4) .cat {
+    animation: category;
+    animation-duration: 2.1s;
+    animation-fill-mode: forwards;
+    transition-timing-function: linear;
+  }
+  
+  #category .cat::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: transform 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+  }
+  
+  #category .cat:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+  
+  #category_icon {
+    width: 30px;
+    height: 15px;
+    margin-left: 1vw;
+    margin-top: 0;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  @keyframes cate_icon {
+    0% {
+      margin-left: -100px;
+    }
+    100% {
+      margin-left: 20%;
+    }
+  }
+  
+  #category_icon .rec {
+    width: 60%;
+    margin: auto;
+    height: 1.5px;
+    background: white;
+  
+    animation: cate_icon;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    transition-timing-function: linear;
+  }
+  
+  #category_icon .rec:nth-child(1) {
+    margin-top: 3px;
+    transition: 1s;
+  }
+  #category_icon .rec:nth-child(2) {
+    margin-top: 2.5px;
+    transition: 1s;
+  }
+  #category_icon .rec:nth-child(3) {
+    margin-top: 2.5px;
+    transition: 1s;
+  }
+  
+  @keyframes logo {
+    0% {
+      top: 100px;
+    }
+    100% {
+      top: -10%;
+    }
+  }
+  
+  #logo {
+    position: relative;
+    width: 20%;
+    background-size: 100% 100%;
+    margin-left: 30%;
+    animation: logo;
+    animation-duration: 2.8s;
+    animation-fill-mode: forwards;
+    transition-timing-function: linear;
+    transition: 1s;
+  }
+  
+  #book_now {
+    width: 65%;
+    position: relative;
+  }
+  
+  @keyframes book_btn {
+    0% {
+      top: 100px;
+    }
+    100% {
+      top: 0%;
+    }
+  }
+  
+  #book_btn {
+    background: none;
+    position: relative;
+    width: 100%;
+    text-decoration: none;
+    height: 3vw;
+    border-radius: 30px;
+    font-family: Intrepid;
+    font-size: 1.2vw;
+    color: white;
+    border: 1px white solid;
+    cursor: pointer;
+    animation: book_btn;
+    animation-duration: 3.2s;
+    animation-fill-mode: forwards;
+    transition-timing-function: linear;
+    transition: 1s;
+  }
+  
+  #logo_web {
+    margin-top: 1vw;
+    margin-left: 2vw;
+  }
