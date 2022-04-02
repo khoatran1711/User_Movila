@@ -1,0 +1,117 @@
+
+#footer {
+    background: #061f14;
+    color: white;
+    margin-top: 10%;
+    font-size: 1.2vw;
+  }
+  
+  #footer-place-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 5vw;
+  }
+  
+  #footer-place-1 li {
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  #contact {
+    margin-left: 10%;
+  }
+  
+  #contact-icon {
+    display: flex;
+  }
+  
+  #contact-icon img {
+    width: 10%;
+    margin-right: 10%;
+  }
+  
+  .footer-place-header {
+    font-family: intrepid;
+    font-size: 1.5vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+  }
+  
+  .footer-place-contact {
+    margin-bottom: 2vw;
+    font-family: intrepid;
+  }
+  
+  #explore {
+    margin-left: 10%;
+  }
+  
+  .footer-place-category {
+    font-family: intrepid;
+  }
+  
+  .footer-place-category li {
+    color: rgb(167, 167, 167);
+    margin-top: 0.5vw;
+  }
+  
+  .footer-place-category li {
+    width: fit-content;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .footer-place-category li:hover {
+    color: white;
+  }
+  
+  .footer-place-category li:hover .footer-line {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+  
+  .footer-place-category .footer-line {
+    width: 100%;
+    height: 1px;
+    background: white;
+    transition: transform 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+  }
+  
+  #footer-place-2 {
+    display: flex;
+    border-top: #fdfbf4 1px solid;
+    border-bottom: #fdfbf4 1px solid;
+    padding-top: 3vw;
+    padding-left: 18%;
+    padding-bottom: 3vw;
+  }
+  #footer-place-2 img {
+    width: 10vw;
+    height: 5vw;
+    filter: brightness(0) invert(1);
+    -webkit-filter: brightness(0) invert(1);
+    margin-left: 10%;
+  }
+  
+  #footer-place-2 img:last-child {
+    width: 5vw;
+  }
+  
+  #footer-place-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 1.5vw;
+    font-size: 1vw;
+    padding-bottom: 1.5vw;
+  }
+  
+  #footer-place-3 p:nth-child(2) {
+    text-align: center;
+  }
+  
+  #footer-place-3 p:nth-child(3) {
+    text-align: right;
+  }
+  

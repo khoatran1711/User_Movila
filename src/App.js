@@ -1,6 +1,8 @@
 import { ToastContainer } from 'react-toastify'
 import { Suspense, lazy } from 'react'
-import { Footer } from './components'
+import Footer from './components/Footer'
+import Header from './components/Header'
+
 import { Switch, BrowserRouter as Router, Route } from 'react-router-dom'
 
 const Homepage = lazy(() => import('./pages/homepage'))
@@ -9,9 +11,8 @@ function App() {
 	return (
 		<Router>
 			<Suspense fallback={<h1>Loading...</h1>}>
-				<Switch>
-					<Route component={Homepage} path='/' exact />
-				</Switch>
+				<Header />
+				<Homepage />
 				<Footer />
 				<ToastContainer
 					position='top-right'
