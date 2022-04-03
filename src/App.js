@@ -6,13 +6,17 @@ import Header from './components/Header'
 import { Switch, BrowserRouter as Router, Route } from 'react-router-dom'
 
 const Homepage = lazy(() => import('./pages/homepage'))
+const Roompage = lazy(() => import('./pages/roompage'))
 
 function App() {
 	return (
 		<Router>
 			<Suspense fallback={<h1>Loading...</h1>}>
 				<Header />
-				<Homepage />
+				<Switch>
+					<Route component={Homepage} path='/' exact />
+					<Route component={Roompage} path='/rooms' exact />
+				</Switch>
 				<Footer />
 				<ToastContainer
 					position='top-right'
