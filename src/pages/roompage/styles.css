@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+#room_banner_cointainer {
+    width: 100%;
+    height: 100%;
+    margin-top: -6vw;
+    overflow: hidden;
+  }
+  
+#banner_img {
+    animation: banner ;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    transition-timing-function: linear;
+  }
+  #home_banner {
+    width: 100%;
+    height: 48vw;
+    background-size: 100% 100%;
+    transition: 0.5s;
+  }
+
+  @keyframes banner {
+    0% {
+      width: 120%;
+      height: 120%;
+    }
+  
+    100% {
+      width: 100%;
+      height: 100%;
+    }
+  }
