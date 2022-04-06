@@ -18,28 +18,28 @@ const Header = () => {
 						<li>
 							<a className='cat' href='#'>
 								{' '}
-								LeCrans{' '}
+								MoVila{' '}
 							</a>
 						</li>
 
 						<li>
 							<a className='cat' href='#'>
 								{' '}
-								Stay{' '}
+								Accommodation{' '}
 							</a>
 						</li>
 
 						<li>
 							<a className='cat' href='#'>
 								{' '}
-								Dine{' '}
+								Story{' '}
 							</a>
 						</li>
 
 						<li>
 							<a className='cat' href='#'>
 								{' '}
-								Wellness{' '}
+								Contact{' '}
 							</a>
 						</li>
 					</ul>
@@ -48,7 +48,7 @@ const Header = () => {
 					<img id='logo' src={Movi} />
 				</section>
 				<section id='book_now'>
-					<button id='book_btn'>Book Now</button>
+					<button id='book_btn'>Login</button>
 				</section>
 			</section>
 		</div>

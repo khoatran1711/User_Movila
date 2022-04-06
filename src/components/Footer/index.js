@@ -17,15 +17,15 @@ const Footer = () => {
 					<div id='contact'>
 						<div className='footer-place-header'>Contact</div>
 						<div className='footer-place-contact'>
-							+41 (0) 27 486 60 60 <br />
-							info@lecrans.com
+							+84 (0) 779 604 768 <br />
+							movila@gmail.com
 						</div>
 						<div className='footer-place-contact'>
-							LeCrans
+							Movila
 							<br />
-							Chemin du Mont-Blanc 1 <br />
-							CP - 179, Plans-Mayens 3963 Crans-Montana <br />
-							Switzerland
+							Ho Chi Minh University Of Technology and Education <br />
+							No. 1, Vo Van Ngan <br />
+							Ho Chi Minh City, Viet Nam
 						</div>
 						<div id='contact-icon'>
 							<img src={fb} />
@@ -37,19 +37,19 @@ const Footer = () => {
 						<div className='footer-place-category'>
 							<ul>
 								<li>
-									Safety
+									MoVila
 									<div className='footer-line'></div>
 								</li>
 								<li>
-									Webcam
+									Accommodation
 									<div className='footer-line'></div>
 								</li>
 								<li>
-									Gallery
+									Our Story
 									<div className='footer-line'></div>
 								</li>
 								<li>
-									Careers
+									Contact
 									<div className='footer-line'></div>
 								</li>
 							</ul>
@@ -60,10 +60,6 @@ const Footer = () => {
 						<div className='footer-place-category'>
 							<ul>
 								<li>
-									Press
-									<div className='footer-line'></div>
-								</li>
-								<li>
 									Blog
 									<div className='footer-line'></div>
 								</li>
@@ -71,15 +67,15 @@ const Footer = () => {
 						</div>
 					</div>
 					<div id='legal-notice'>
-						<div className='footer-place-header'>News</div>
+						<div className='footer-place-header'>Legal Notices</div>
 						<div className='footer-place-category'>
 							<ul>
 								<li>
-									Terms and conditions
+									Terms and Conditions
 									<div className='footer-line'></div>
 								</li>
 								<li>
-									Privacy Policy
+									Privacy Policies
 									<div className='footer-line'></div>
 								</li>
 							</ul>
@@ -94,7 +90,7 @@ const Footer = () => {
 				<div id='footer-place-3'>
 					<p>&copy Copyright . LeCrans</p>
 					<p>2022. All rights reserved.</p>
-					<p>Designed by EWM.SWISS.</p>
+					<p>Designed by SRUM.TEAM.101</p>
 				</div>
 			</section>
 		</div>
