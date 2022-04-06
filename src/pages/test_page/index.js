@@ -1,23 +1,17 @@
-import { ToastContainer } from 'react-toastify'
+import react from 'react'
+import './styles.css'
 import { Suspense, lazy } from 'react'
-import Footer from './components/Footer'
-import Header from './components/Header'
+import Hotel_room_img_1 from '../../assets/roompage/room_1.png'
+import Hotel_room_img_2 from '../../assets/roompage/room_2.png'
+import Hotel_room_img_3 from '../../assets/roompage/room_3.png'
+import Hotel_room_img_4 from '../../assets/roompage/room_4.png'
+import Hotel_room_img_5 from '../../assets/roompage/room_5.png'
+import Hotel_room_img_6 from '../../assets/roompage/room_6.png'
+import Hotel_room_img_7 from '../../assets/roompage/room_7.png'
+import Hotel_room_img_8 from '../../assets/roompage/room_8.png'
+import { useParams } from 'react-router-dom'
 
-import Hotel_room_img_1 from './assets/roompage/room_1.png'
-import Hotel_room_img_2 from './assets/roompage/room_2.png'
-import Hotel_room_img_3 from './assets/roompage/room_3.png'
-import Hotel_room_img_4 from './assets/roompage/room_4.png'
-import Hotel_room_img_5 from './assets/roompage/room_5.png'
-import Hotel_room_img_6 from './assets/roompage/room_6.png'
-import Hotel_room_img_7 from './assets/roompage/room_7.png'
-import Hotel_room_img_8 from './assets/roompage/room_8.png'
-
-import { Switch, BrowserRouter as Router, Route } from 'react-router-dom'
-
-const Homepage = lazy(() => import('./pages/homepage'))
-const Roompage = lazy(() => import('./pages/roompage'))
-const Test_page = lazy(() => import('./pages/test_page'))
-
+const Infopage = lazy(() => import('../infopage'))
 const hotels = [
 	{
 		id: 1,
@@ -282,33 +276,24 @@ const hotels = [
 	},
 ]
 
-function App() {
-	return (
-		<Router>
-			<Suspense fallback={<h1>Loading...</h1>}>
-				<Header />
+const Each_info_page = () => {
+	const params = useParams()
+	console.log(params.id)
+	const id = params.id
 
-				<Switch>
-					<Route component={Homepage} path='/' exact />
-					<Route component={Roompage} path='/rooms' exact />
-					<Route component={Test_page} path={'/info/:id'} exact></Route>
-				</Switch>
-				<Footer />
-				<ToastContainer
-					position='top-right'
-					autoClose={5000}
-					hideProgressBar={false}
-					newestOnTop={false}
-					closeOnClick
-					rtl={false}
-					pauseOnFocusLoss
-					draggable
-					pauseOnHover
-				/>
-				<ToastContainer />
-			</Suspense>
-		</Router>
+	return (
+		<div>
+			<Infopage
+				type={hotels[id - 1].type}
+				image={hotels[id - 1].image}
+				property={hotels[id - 1].property}
+				description={hotels[id - 1].description}
+				title={hotels[id - 1].title}
+				full_description={hotels[id - 1].full_description}
+				full_property={hotels[id - 1].full_property}
+				price={hotels[id - 1].price}
+			/>
+		</div>
 	)
 }
-
-export default App
+export default Each_info_page
