@@ -34,3 +34,18 @@
       height: 100%;
     }
   }
+
+#menu-selection {
+    width: 80%;
+    margin: auto;
+    display: grid;
+   
+    column-gap: 5%;
+}
+  
+@media(min-width: 650px){
+  #menu-selection{
+    grid-template-columns: 1fr 1fr;
+
+  }
+}
