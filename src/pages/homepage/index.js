@@ -49,25 +49,20 @@ const homepage = () => {
 			</section>
 			<section id='content-1'>
 				<section id='header-content-1'>
-					<h4>A remote part of the world to deeply switch off and unwind</h4>
+					<h4>Safe and Sound </h4>
 				</section>
 				<div className='content'>
-					LeCrans is an Alpine haven of exceptionally refined warmth, restorative tranquillity and
-					discerning care. Located above Crans-Montana mountain resort on the edge of a peaceful
-					Alpine forest, this is the ultimate setting to spoil yourself within lush green
-					surroundings that allow you to absorb and engage in the comforts of nature.
+					Founded in 2022, SCRUM 101 is a nonprofit organization. We exist with a misson to help the
+					youth of every country find a shelter to stay during their student years.
 					<br />
 					<br />
-					Explore a remote and beautiful part of the world surrounded by exhilarating scenery and
-					striking landscapes. Indulge in sleek and luxurious interiors that will far surpass your
-					expectations. Enjoy impeccable service, gourmet cuisine, delectable delights and a
-					world-class spa that all combine to create an unforgettable experience that’s guaranteed
-					to leave a footprint on your heart.
+					Taking into account, the hardship of students who live far away from home, some are even
+					in financial disability. Because of that, we always try our best to provide them
+					affordable and convinient places to rest after hours of tiring study.
 					<br />
 					<br />
-					Each suite’s design harnesses all there is to love about Switzerland’s breath-taking
-					natural landscape. Rooms features rustic designs and unique architecture, as well as
-					balconies and terraces where you can watch the sunset over the mountains.
+					Why SCRUM 101 is a nonprofit organization? You asked. We simply answer with a quote from
+					our billionaire, founder, Ho Dang Tien:"I'm rich".
 				</div>
 			</section>
 			<section id='content-2'>
@@ -75,7 +70,7 @@ const homepage = () => {
 					<img src={content2_pic} />
 				</div>
 				<section id='header-content-2'>
-					<h4>Seeking a truly peaceful experience? Indulge, escape and relax at LeCrans</h4>
+					<h4>Seeking a truly peaceful experience? Find SCRUM 101, we can guarantee.</h4>
 				</section>
 			</section>
 

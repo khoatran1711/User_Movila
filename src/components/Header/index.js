@@ -1,6 +1,7 @@
 import react from 'react'
 import './styles.css'
 import Movi from '../../assets/Movila.png'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
 	return (
@@ -16,17 +17,21 @@ const Header = () => {
 					<script src='category.js'></script>
 					<ul>
 						<li>
-							<a className='cat' href='#'>
-								{' '}
-								MoVila{' '}
-							</a>
+							<Link to='/'>
+								<a className='cat' href='#'>
+									{' '}
+									MoVila{' '}
+								</a>
+							</Link>
 						</li>
 
 						<li>
-							<a className='cat' href='#'>
-								{' '}
-								Accommodation{' '}
-							</a>
+							<Link to='/rooms'>
+								<a className='cat' href='#'>
+									{' '}
+									Accommodation{' '}
+								</a>
+							</Link>
 						</li>
 
 						<li>

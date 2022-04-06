@@ -8,6 +8,7 @@ import insta from '../../assets/instagram.png'
 import the_leading_hotel from '../../assets/the_leading_hotel.png'
 import clean_and_safe from '../../assets/clean-and-safe-stamp-white.png'
 import swi from '../../assets/swi.png'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
 	return (
@@ -37,12 +38,16 @@ const Footer = () => {
 						<div className='footer-place-category'>
 							<ul>
 								<li>
-									MoVila
-									<div className='footer-line'></div>
+									<Link to='/'>
+										MoVila
+										<div className='footer-line'></div>
+									</Link>
 								</li>
 								<li>
-									Accommodation
-									<div className='footer-line'></div>
+									<Link to='/rooms'>
+										Accommodation
+										<div className='footer-line'></div>
+									</Link>
 								</li>
 								<li>
 									Our Story
