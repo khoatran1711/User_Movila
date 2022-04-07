@@ -1,0 +1,41 @@
+//Colors:
+$greyColor: #DFDFDE;
+$whiteColor: rgb(255, 255, 255);
+$redColor: rgb(220, 0, 0);
+$greenColor: green;
+$paleColor: #FFF6EA;
+
+.loginForm{
+    position: relative;
+    padding: 20px;
+    margin: 0 auto;
+    display: inline-block;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    font-family: 'Intrepid', sans-serif;
+    justify-content: center;
+
+    .input-container{
+        margin: 15px;
+    }
+
+    input[type=submit]{
+        background-color: $paleColor;
+        padding:2%;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+
+    input[type=text],[type=password]{
+        font-size: 16px;
+        padding: 5px 0;
+        margin-left: 5px;
+        box-sizing: border-box;
+        border:1px solid #ccc;
+    }
+}
+
+body{
+    background-color: $whiteColor;
+}
