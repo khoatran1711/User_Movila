@@ -14,11 +14,11 @@ const aboutpage = () => {
 		<div>
 			<section id='about_banner'>
 				<div id='about_banner_cointainer'>
-					<img id='banner_img' src={about_banner} />
+					<img id='banner_img' src={about_banner} alt='Banner' />
 				</div>
 			</section>
 			<section id='intro_story'>
-				<img id='logo' src={logo}></img>
+				<img id='logo' src={logo} alt='Logo'></img>
 				<div className='intro_content_story'>
 					Located above Crans-Montana mountain resort, on the edge of a peaceful Alpine forest,
 					LeCrans is a haven of warmth, tranquillity and restoration. Bathed in the resplendent
