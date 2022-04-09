@@ -16,7 +16,8 @@ import { Switch, BrowserRouter as Router, Route } from 'react-router-dom'
 
 const Homepage = lazy(() => import('./pages/homepage'))
 const Roompage = lazy(() => import('./pages/roompage'))
-const Test_page = lazy(() => import('./pages/test_page'))
+const Roomdetail = lazy(() => import('./pages/roomdetail'))
+
 const Aboutpage = lazy(() => import('./pages/storypage'))
 
 const hotels = [
@@ -292,7 +293,8 @@ function App() {
 				<Switch>
 					<Route component={Homepage} path='/' exact />
 					<Route component={Roompage} path='/rooms' exact />
-					<Route component={Test_page} path={'/info/:id'} exact></Route>
+					<Route component={Roomdetail} path='/rooms/:id' exact />
+
 					<Route component={Aboutpage} path={'/story'} exact></Route>
 				</Switch>
 				<Footer />

@@ -8,7 +8,7 @@ const value = 2
 
 const hotel = (props) => {
 	return (
-		<Link className='link' to={`/info/${props.id}`}>
+		<Link className='link' to={`/rooms/${props.id}`}>
 			<div className='hotel'>
 				<div className='img-hotel'>
 					<img src={props.image} />
