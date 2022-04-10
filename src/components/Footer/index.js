@@ -50,8 +50,10 @@ const Footer = () => {
 									</Link>
 								</li>
 								<li>
-									Our Story
-									<div className='footer-line'></div>
+									<Link to='/story'>
+										Our Story
+										<div className='footer-line'></div>
+									</Link>
 								</li>
 								<li>
 									Contact
