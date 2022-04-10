@@ -44,10 +44,12 @@ const Header = () => {
 						</li>
 
 						<li>
-							<a className='cat' href='#'>
-								{' '}
-								Contact{' '}
-							</a>
+							<Link to='/contact'>
+								<a className='cat' href='#'>
+									{' '}
+									Contact{' '}
+								</a>
+							</Link>
 						</li>
 					</ul>
 				</section>
