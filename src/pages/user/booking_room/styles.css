@@ -1,0 +1,56 @@
+#Booking_room{
+    font-family: Intrepid;
+    font-size: 1.5vw;
+    color: #452F22;
+    margin-left: 2vw;
+    margin-top: 1.7vw;
+}
+#Booking_rooms_area{
+    margin-left: 2vw;
+    margin-top: 1vw;
+    
+}
+
+
+
+.Booking_room{
+    background: url('../pic/user_pattern.jpg');
+    background-size: 100% 100%;
+    width: 20vw;
+    height: 25vw;
+    border-radius: 1vw;
+}
+
+.Booking_room_img{
+    background-size: 100% 100%;
+    width: 18vw;
+    height: 15vw;
+    margin-left: 1vw;
+    border-bottom-right-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+}
+
+.Booking_room_name{
+    font-family: Intrepid;
+    font-size: 1.3vw;
+    color: #FDFBF4;
+    text-align: center;
+}
+
+.Booking_room_time{
+    font-family: Intrepid;
+    font-size: 1.3vw;
+    color: #FDFBF4;
+    text-align: center;
+}
+.Cancel_booking{
+    background: #FDFBF4;
+    width: fit-content;
+    padding: 0.3vw 0.5vw;
+    margin: auto;
+    font-size: 1.2vw;
+    font-family: Intrepid;
+    margin-top: 1vw;
+    cursor: pointer;
+    color: #452F22;
+}

@@ -287,6 +287,30 @@ const roompage = () => {
 					<img id='banner_img' src={room_banner} />
 				</div>
 			</section>
+			<section id='finding_filter_area'>
+				<input id='input_search' type='text' placeholder='Type your room name'></input>
+				<button id='find_search_btn'>Find</button>
+				<section id='filter_area'>
+					<div class='dropdown'>
+						<div class='type'>Type</div>
+						<div class='dropdown-content'>
+							<a href='#'>All</a>
+							<a href='#'>Normal</a>
+							<a href='#'>Special</a>
+						</div>
+					</div>
+					<div class='dropdown'>
+						<div class='type'>Guests</div>
+						<div class='dropdown-content'>
+							<a href='#'>All</a>
+							<a href='#'>1</a>
+							<a href='#'>2</a>
+							<a href='#'>3</a>
+							<a href='#'>4</a>
+						</div>
+					</div>
+				</section>
+			</section>
 			<section id='menu-selection'>
 				{hotels.map((item) => (
 					<Hotel

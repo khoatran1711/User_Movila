@@ -1,0 +1,37 @@
+
+
+
+
+form{
+    margin-left: 4vw;
+}
+
+input[type="submit"]{
+    background: #452F22;
+    margin-top: 2.7vw;
+    font-size: 1.5vw;
+    font-family: Intrepid;
+    color: #FDFBF4;
+    padding:1vw 1.5vw ;
+    cursor: pointer;
+}
+
+.title_general{
+    font-family: Intrepid;
+    font-size: 2vw;
+    color: #452F22;
+    margin-top: 2.3vw;
+}
+
+
+input[type="text"]{
+    all: unset;
+    font-family: Intrepid;
+    font-size: 1.5vw;
+    color: #452F22;
+    border: none;
+    border-bottom: #452F22 1px solid;
+    background: none;
+    margin-top: 0.5vw;
+    width: 30vw;
+}
