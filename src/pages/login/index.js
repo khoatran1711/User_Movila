@@ -6,8 +6,26 @@ import user_login_pattern from './pic/user_login_pattern.png'
 import user_signup_img from './pic/user_signup.png'
 import user_signup_pattern from './pic/user_signup_pattern.png'
 
+import { UseGetUser } from '../../DataQuery/Query.queries'
+import { UsePostRoom } from '../../DataQuery/Query.queries'
+import { UseDeleteRoom } from '../../DataQuery/Query.queries'
+import { UsePutRoom } from '../../DataQuery/Query.queries'
+import { UseGetAccountLogin } from '../../DataQuery/Query.queries'
+
 let flag = true
-const login = () => {
+const Login = () => {
+	//const list = UseGetUser()
+	//const po = UsePostRoom()
+	//const de = UseDeleteRoom()
+	//const pu = UsePutRoom(3)
+
+	function Login1() {
+		var acc = document.getElementById('login_acc').value
+		var pass = document.getElementById('login_pass').value
+		const result = UseGetAccountLogin('a', 'b')
+		console.log(result)
+	}
+
 	return (
 		<div>
 			<section id='login_container'>
@@ -17,15 +35,18 @@ const login = () => {
 						<form>
 							<h1>
 								Hi !
-								<br /> Log into your account <br />
+								<br /> Log into your account
+								<br />
 							</h1>
 							<h3>Account</h3>
-							<input type='text' name='login_acc' />
+							<input id='login_acc' type='text' name='login_acc' />
 							<h3>Password</h3>
-							<input type='text' name='login_pas' />
+							<input id='login_pass' type='text' name='login_pas' />
 							<br />
-							<input type='submit' value='Log in' />
 						</form>
+						<button id='submit_btn' onClick={Login1}>
+							Log in
+						</button>
 					</section>
 					<section id='signup_form'>
 						<form>
@@ -67,7 +88,7 @@ const login = () => {
 	)
 }
 
-export default login
+export default Login
 
 function Changepage() {
 	let login_form = document.getElementById('login_form')

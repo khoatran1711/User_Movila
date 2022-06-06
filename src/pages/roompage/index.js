@@ -1,5 +1,6 @@
 import react from 'react'
 import { Suspense, lazy } from 'react'
+import React, { useState } from 'react'
 import './styles.css'
 
 import Hotel_room_img_1 from '../../assets/roompage/room_1.png'
@@ -279,7 +280,22 @@ const hotels = [
 	},
 ]
 
-const roompage = () => {
+const Roompage = () => {
+	const [data, setData] = useState(hotels)
+
+	function Search() {
+		var val = document.getElementById('input_search').value
+		var new_data = []
+		for (let i = 0; i < hotels.length; i++) {
+			let text = hotels[i].type
+			if (text.includes(val)) {
+				new_data.push(hotels[i])
+			}
+		}
+		setData(new_data)
+		console.log(data)
+	}
+
 	return (
 		<div>
 			<section id='room_banner'>
@@ -289,7 +305,9 @@ const roompage = () => {
 			</section>
 			<section id='finding_filter_area'>
 				<input id='input_search' type='text' placeholder='Type your room name'></input>
-				<button id='find_search_btn'>Find</button>
+				<button id='find_search_btn' onClick={Search}>
+					Find
+				</button>
 				<section id='filter_area'>
 					<div class='dropdown'>
 						<div class='type'>Type</div>
@@ -312,7 +330,7 @@ const roompage = () => {
 				</section>
 			</section>
 			<section id='menu-selection'>
-				{hotels.map((item) => (
+				{data.map((item) => (
 					<Hotel
 						id={item.id}
 						type={item.type}
@@ -329,4 +347,4 @@ const roompage = () => {
 		</div>
 	)
 }
-export default roompage
+export default Roompage

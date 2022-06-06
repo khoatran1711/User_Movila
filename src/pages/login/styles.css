@@ -101,7 +101,7 @@
 
   
 }
-#login_form input[type="submit"]{
+#submit_btn{
     text-decoration: none;
     color: #452E22;
     background: #fdfbf4;
