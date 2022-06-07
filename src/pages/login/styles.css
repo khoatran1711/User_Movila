@@ -113,6 +113,7 @@
     border-radius: 30px;
     margin-top: 3vw;
     color: #452E22;
+    cursor: pointer;
 }
 
 #signup_form{

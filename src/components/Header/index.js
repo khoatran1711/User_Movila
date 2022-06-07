@@ -56,8 +56,17 @@ const Header = () => {
 				<section id='logo_web'>
 					<img id='logo' src={Movi} />
 				</section>
+
 				<section id='book_now'>
-					<button id='book_btn'>Login</button>
+					{window.name < 0 || !window.name ? (
+						<Link to={`/login`}>
+							<button id='book_btn'>Login</button>
+						</Link>
+					) : (
+						<Link to={`/user`}>
+							<button id='book_btn'>My account</button>
+						</Link>
+					)}
 				</section>
 			</section>
 		</div>

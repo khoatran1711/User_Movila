@@ -11,20 +11,16 @@ import { UsePostRoom } from '../../DataQuery/Query.queries'
 import { UseDeleteRoom } from '../../DataQuery/Query.queries'
 import { UsePutRoom } from '../../DataQuery/Query.queries'
 import { UseGetAccountLogin } from '../../DataQuery/Query.queries'
-
+import name from '../../Global'
+import { changeValue } from '../../Global'
 let flag = true
 const Login = () => {
 	//const list = UseGetUser()
 	//const po = UsePostRoom()
 	//const de = UseDeleteRoom()
 	//const pu = UsePutRoom(3)
-
-	function Login1() {
-		var acc = document.getElementById('login_acc').value
-		var pass = document.getElementById('login_pass').value
-		const result = UseGetAccountLogin('a', 'b')
-		console.log(result)
-	}
+	//Object.freeze(myInitObject)
+	const result = UseGetAccountLogin('a', 'b')
 
 	return (
 		<div>
@@ -44,9 +40,7 @@ const Login = () => {
 							<input id='login_pass' type='text' name='login_pas' />
 							<br />
 						</form>
-						<button id='submit_btn' onClick={Login1}>
-							Log in
-						</button>
+						{result}
 					</section>
 					<section id='signup_form'>
 						<form>

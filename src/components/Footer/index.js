@@ -11,6 +11,21 @@ import swi from '../../assets/swi.png'
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
+	function toInsta() {
+		window.open('https://www.instagram.com/blue.petunia_/', '_blank')
+	}
+	function toFacebook() {
+		window.open('https://m.facebook.com/106452165429017/', '_blank')
+	}
+	function toPolicy() {
+		window.open(
+			'https://firebasestorage.googleapis.com/v0/b/algebraic-fin-332903.appspot.com/o/Company%20Policy%20Template.pdf?alt=media&token=dd6be6be-0933-4fe3-b965-fb5b7cdfcfea',
+			'_blank'
+		)
+	}
+	function toCondition() {
+		window.open('http://fitnik.tech/public/docs/terms.pdf', '_blank')
+	}
 	return (
 		<div>
 			<section id='footer'>
@@ -29,8 +44,8 @@ const Footer = () => {
 							Ho Chi Minh City, Viet Nam
 						</div>
 						<div id='contact-icon'>
-							<img src={fb} />
-							<img src={insta} />
+							<img src={fb} onClick={toFacebook} />
+							<img src={insta} onClick={toInsta} />
 						</div>
 					</div>
 					<div id='explore'>
@@ -69,23 +84,31 @@ const Footer = () => {
 						<div className='footer-place-category'>
 							<ul>
 								<li>
-									Blog
-									<div className='footer-line'></div>
+									<Link onClick={toFacebook}>
+										Blog
+										<div className='footer-line'></div>
+									</Link>
 								</li>
 							</ul>
 						</div>
 					</div>
 					<div id='legal-notice'>
 						<div className='footer-place-header'>Legal Notices</div>
+
 						<div className='footer-place-category'>
 							<ul>
 								<li>
-									Terms and Conditions
-									<div className='footer-line'></div>
+									<Link onClick={toCondition}>
+										Terms and Conditions
+										<div className='footer-line'></div>
+									</Link>
 								</li>
+
 								<li>
-									Privacy Policies
-									<div className='footer-line'></div>
+									<Link onClick={toPolicy}>
+										Privacy Policies
+										<div className='footer-line'></div>
+									</Link>
 								</li>
 							</ul>
 						</div>

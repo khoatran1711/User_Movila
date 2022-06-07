@@ -21,7 +21,6 @@ const hotel = (props) => {
 					<div className='property-content-hotel'>{props.property}</div>
 					<div className='description-content-hotel'>{props.description}</div>
 				</div>
-				<button className='discovery-hotel'>Discover More</button>
 			</div>
 		</Link>
 	)

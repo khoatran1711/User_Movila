@@ -28,6 +28,7 @@
   #contact-icon img {
     width: 10%;
     margin-right: 10%;
+    cursor: pointer;
   }
   
   .footer-place-header {

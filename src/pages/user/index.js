@@ -12,6 +12,7 @@ const Booking_room = lazy(() => import('./booking_room'))
 const History_room = lazy(() => import('./History_room'))
 
 const User = () => {
+	console.log(window.name)
 	const [count, setCount] = useState(0)
 	function myfuntion() {
 		setCount(0)

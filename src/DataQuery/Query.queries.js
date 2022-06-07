@@ -33,14 +33,40 @@ export const UseGetAccountLogin = (username, password) => {
 					role: 'user',
 				},
 			})
-			.then((response) => setData(response.data))
+			.then((response) => {
+				setData(response.data)
+			})
 	}, [])
-
-	var return_data = []
-	if (data.length > 0) {
-		return data
+	function count() {
+		var acc = document.getElementById('login_acc').value
+		var pass = document.getElementById('login_pass').value
+		//window.location = 'http://localhost:3000/rooms'
+		return axios
+			.get(url_key, {
+				params: {
+					username: acc,
+					password: pass,
+					role: 'user',
+				},
+			})
+			.then((response) => {
+				setData(response.data)
+				if (response.data[0]) {
+					console.log(data[0])
+					window.name = data[0].id
+					console.log(window.name)
+					window.location = 'http://localhost:3000/'
+				}
+			})
 	}
-	return return_data
+
+	return (
+		<div>
+			<button id='submit_btn' onClick={count}>
+				Log in
+			</button>
+		</div>
+	)
 }
 
 export const UsePostRoom = () => {

@@ -282,7 +282,7 @@ const hotels = [
 
 const Roompage = () => {
 	const [data, setData] = useState(hotels)
-
+	console.log(window.name)
 	function Search() {
 		var val = document.getElementById('input_search').value
 		var new_data = []
