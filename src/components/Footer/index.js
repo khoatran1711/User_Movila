@@ -120,7 +120,7 @@ const Footer = () => {
 					<img src={clean_and_safe} />
 				</div>
 				<div id='footer-place-3'>
-					<p>&copy Copyright . LeCrans</p>
+					<p>&copy Copyright . Movila</p>
 					<p>2022. All rights reserved.</p>
 					<p>Designed by our team</p>
 				</div>

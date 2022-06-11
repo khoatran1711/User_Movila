@@ -2,12 +2,12 @@ import React from 'react'
 import { Suspense, lazy } from 'react'
 import './styles.css'
 
-import Hotel_room_img_1 from '../../assets/homepage/hotel_pic/hotel_room.png'
-import Hotel_room_img_2 from '../../assets/homepage/hotel_pic/hotel_room_2.png'
-import Hotel_room_img_3 from '../../assets/homepage/hotel_pic/hotel_room_3.png'
+import Hotel_room_img_1 from '../../assets/homepage/hotel_pic/social_media.jpg'
+import Hotel_room_img_2 from '../../assets/homepage/hotel_pic/family.jpg'
+import Hotel_room_img_3 from '../../assets/homepage/hotel_pic/explore.jpg'
 import home_banner from '../../assets/home_banner.png'
 import content2_pic from '../../assets/content2_pic.jpg'
-import content_3_img from '../../assets/content_3_img2.jpg'
+import content_3_img from '../../assets/content_3_img.jpg'
 import content_3_img_2 from '../../assets/content_3_img_2.jpg'
 
 const Hotels = lazy(() => import('./hotels'))
@@ -15,27 +15,27 @@ const Hotels = lazy(() => import('./hotels'))
 const hotels = [
 	{
 		id: 1,
-		type: 'Classic Room',
+		type: 'Social Media',
 		image: Hotel_room_img_1,
-		property: '25m / No specific view / 2 Adults',
+		property: 'Instagram / Facebook / Twitter',
 		description:
-			'The dark wood panelling and elegant furnishings evoke the charm of a secluded Sierra Nevada getaway.',
+			'We are always waitting for your reply about your experience. You can send any comments to us whenever there is something that brings you bad experience ',
 	},
 	{
 		id: 2,
-		type: 'Superior Room',
+		type: 'Family',
 		image: Hotel_room_img_2,
-		property: '25m / Partial Mountain View / 2 Adults, 1 Children ',
+		property: 'Family Trip',
 		description:
-			'The superior double rooms offer a cosy, rustic atmosphere, and are the ultimate setting to escape from the stresses of daily life.',
+			'Not only you but we also want to bring the best experience to the persons that you love. We hope you can share your perfect time with your family with us',
 	},
 	{
 		id: 3,
-		type: 'Deluxe Room',
+		type: 'Exploring',
 		image: Hotel_room_img_3,
-		property: '28 - 36m/ Mountain View/ 2 Adults ',
+		property: 'Always be your side ',
 		description:
-			'Each impressive deluxe room is inspired by a different mountain region of the world, from the Swiss Alps to Mount Kilimanjaro.',
+			'Always be with you in your exploration, no matter how hard the jouney is, we are alway there next to you in your exploration.',
 	},
 ]
 
@@ -88,7 +88,13 @@ const homepage = () => {
 						<img src={content_3_img} />
 					</div>
 					<div id='content-3-block1-content'>
-						<h6>There are many hotels and comfortable rooms with beautiful views</h6>
+						<h6>
+							At Movila, earth, air, fire and water combine to enhance your closeness with nature
+							and bring you an authentic, once-in-a-lifetime travel experience that values the
+							traditions of Switzerland. This superior resort was carefully thought out and
+							developed to take you on a journey of self-discovery, combining the five senses for
+							the experience of a lifetime.
+						</h6>
 					</div>
 				</div>
 				<div id='content-3-block2'>
@@ -96,7 +102,16 @@ const homepage = () => {
 						<img src={content_3_img_2} />
 					</div>
 					<div id='content-3-block2-content'>
-						<h6>MoVila's partners will bring you the space closest to nature</h6>
+						<h6>
+							Immerse yourself in a world that is truly representative of Switzerland. Movila offers
+							a unique glimpse into nature’s rich tapestry, where you can relish in other-worldly
+							scenery and dramatic landscapes. Once the day’s explorations and indulgences are
+							complete, enjoy sumptuous architecture and splendid amenities, all of which are in
+							perfect harmony with the distinctive surroundings and scenery. Blending sight, smell,
+							sound, taste and touch, everything about Movila is intricately executed for a truly
+							immersive experience. Our Michelin-starred restaurant, fine wine cellar and bar, cigar
+							lounge and world-class spa complete this unforgettable experience.
+						</h6>
 					</div>
 				</div>
 			</section>

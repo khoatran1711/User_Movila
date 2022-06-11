@@ -16,14 +16,13 @@ const Booking_room = () => {
 				{my_booking_room[0]
 					? my_booking_room.map((item) => (
 							<div className='Booking_room'>
-								<input id={'booking_' + my_booking_room[0].id} type={'hidden'}></input>
-								<img className='Booking_room_img' src={my_booking_room[0].booked_room.imageURL} />
+								<input id={'booking_' + item.id} type={'hidden'}></input>
+								<img className='Booking_room_img' src={item.booked_room.imageURL} />
 								<div className='Booking_room_name'>
-									Room {my_booking_room[0].booked_room.name} -{' '}
-									{my_booking_room[0].booked_room.hotel.name}
+									Room {item.booked_room.name} - {item.booked_room.hotel.name}
 								</div>
-								<div className='Booking_room_time'>{my_booking_room[0].checkinDate}</div>
-								{UseDeleteBooking(my_booking_room[0].id)}
+								<div className='Booking_room_time'>{item.checkinDate}</div>
+								{UseDeleteBooking(item.id)}
 							</div>
 					  ))
 					: ''}

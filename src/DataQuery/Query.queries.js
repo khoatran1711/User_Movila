@@ -282,7 +282,7 @@ export const UsePostBookRoom = (id_user, id_room) => {
 	function Add() {
 		const article = {}
 
-		if (window.name < 0) {
+		if (window.name < 0 || !window.name) {
 			window.alert('Please login to book room!')
 			return ''
 		}
