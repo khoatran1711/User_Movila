@@ -122,7 +122,7 @@ const Footer = () => {
 				<div id='footer-place-3'>
 					<p>&copy Copyright . LeCrans</p>
 					<p>2022. All rights reserved.</p>
-					<p>Designed by SRUM.TEAM.101</p>
+					<p>Designed by our team</p>
 				</div>
 			</section>
 		</div>

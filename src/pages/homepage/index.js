@@ -7,7 +7,7 @@ import Hotel_room_img_2 from '../../assets/homepage/hotel_pic/hotel_room_2.png'
 import Hotel_room_img_3 from '../../assets/homepage/hotel_pic/hotel_room_3.png'
 import home_banner from '../../assets/home_banner.png'
 import content2_pic from '../../assets/content2_pic.jpg'
-import content_3_img from '../../assets/content_3_img.jpg'
+import content_3_img from '../../assets/content_3_img2.jpg'
 import content_3_img_2 from '../../assets/content_3_img_2.jpg'
 
 const Hotels = lazy(() => import('./hotels'))
@@ -49,20 +49,27 @@ const homepage = () => {
 			</section>
 			<section id='content-1'>
 				<section id='header-content-1'>
-					<h4>Safe and Sound </h4>
+					<h4>Welcome to MoVila </h4>
 				</section>
 				<div className='content'>
-					Founded in 2022, SCRUM 101 is a nonprofit organization. We exist with a misson to help the
-					youth of every country find a shelter to stay during their student years.
+					Today, our country is undergoing a period of industrialization and modernization. The
+					strong growth of technology is the driving force behind that growth, and the information
+					technology industry is a key factor in that growth.
 					<br />
 					<br />
-					Taking into account, the hardship of students who live far away from home, some are even
-					in financial disability. Because of that, we always try our best to provide them
-					affordable and convinient places to rest after hours of tiring study.
+					Currently, the demand for human travel is increasing, when going to a new place. I'll be
+					interested in booking a hotel to stay.
 					<br />
 					<br />
-					Why SCRUM 101 is a nonprofit organization? You asked. We simply answer with a quote from
-					our billionaire, founder, Ho Dang Tien:"I'm rich".
+					However, due to communication issues and the epidemic, people will have difficulty in
+					booking hotels, price issues and funding to maintain the epidemic of the hotel side.
+					Understanding those difficulties, our team worked together to make an online hotel booking
+					software on our phones.
+					<br />
+					<br />
+					With Movila that our team has built, customers can look up the information of the hotel
+					they want to find the right hotel in terms of geography, room price, and the hotel side
+					will rent more rooms.
 				</div>
 			</section>
 			<section id='content-2'>
@@ -70,28 +77,18 @@ const homepage = () => {
 					<img src={content2_pic} />
 				</div>
 				<section id='header-content-2'>
-					<h4>Seeking a truly peaceful experience? Find SCRUM 101, we can guarantee.</h4>
+					<h4>Seeking a truly peaceful experience? Find MoVila.</h4>
 				</section>
 			</section>
 
 			<section id='content-3'>
 				<div id='content-3-block1'>
-					<div id='header-content-3'>A region steeped in geological and human history</div>
+					<div id='header-content-3'>Great experiences when you choose MoVila</div>
 					<div id='content-3-block1-img'>
 						<img src={content_3_img} />
 					</div>
 					<div id='content-3-block1-content'>
-						<h5>Indulge in a prestigious resort steeped in luxury and magnificence</h5>
-						<h6>
-							Immerse yourself in a world that is truly representative of Switzerland. LeCrans
-							offers a unique glimpse into nature’s rich tapestry, where you can relish in
-							other-worldly scenery and dramatic landscapes. Once the day’s explorations and
-							indulgences are complete, enjoy sumptuous architecture and splendid amenities, all of
-							which are in perfect harmony with the distinctive surroundings and scenery. Blending
-							sight, smell, sound, taste and touch, everything about LeCrans is intricately executed
-							for a truly immersive experience. Our Michelin-starred restaurant, fine wine cellar
-							and bar, cigar lounge and world-class spa complete this unforgettable experience.
-						</h6>
+						<h6>There are many hotels and comfortable rooms with beautiful views</h6>
 					</div>
 				</div>
 				<div id='content-3-block2'>
@@ -99,26 +96,12 @@ const homepage = () => {
 						<img src={content_3_img_2} />
 					</div>
 					<div id='content-3-block2-content'>
-						<h6>
-							Immerse yourself in a world that is truly representative of Switzerland. LeCrans
-							offers a unique glimpse into nature’s rich tapestry, where you can relish in
-							other-worldly scenery and dramatic landscapes. Once the day’s explorations and
-							indulgences are complete, enjoy sumptuous architecture and splendid amenities, all of
-							which are in perfect harmony with the distinctive surroundings and scenery. Blending
-							sight, smell, sound, taste and touch, everything about LeCrans is intricately executed
-							for a truly immersive experience. Our Michelin-starred restaurant, fine wine cellar
-							and bar, cigar lounge and world-class spa complete this unforgettable experience.
-						</h6>
-						<button id='discover_more'>Discover More</button>
+						<h6>MoVila's partners will bring you the space closest to nature</h6>
 					</div>
 				</div>
 			</section>
 			<section id='content-4'>
-				<div id='content-4-header'>
-					Each themed room and suite takes you to a different region or mountain of the world, from
-					the Himalayas to the Kilimanjaro.
-				</div>
-				<button id='content-4-btn'>Discover Room</button>
+				<div id='content-4-header'>Each themed room and suite takes you to a different view.</div>
 			</section>
 			<section id='selection-banner'>
 				<section id='selection-place'>

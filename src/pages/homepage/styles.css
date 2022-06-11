@@ -109,24 +109,24 @@
   }
   
   #content-3-block1-img {
-    width: 74%;
+    width: 100%;
   }
   
   #content-3-block1-img img {
     margin-top: 5vw;
-    width: 60%;
+    width: 100%;
     overflow: hidden;
-    margin-left: 30%;
+    margin-left: 15%;
   }
   
   #content-3-block1-content {
-    display: grid;
+    display: flex;
     margin-top: 4vw;
   }
   
   @media (min-width: 600px) {
     #content-3-block1-content {
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr 3fr;
       width: 74%;
     }
     #content-3-block1-content h5 {

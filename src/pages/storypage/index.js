@@ -20,30 +20,28 @@ const aboutpage = () => {
 			<section id='intro_story'>
 				<img id='logo' src={logo} alt='Logo'></img>
 				<div className='intro_content_story'>
-					“Scrum is a lightweight framework that helps people, teams and organizations generate
-					value through adaptive solutions for complex problems.” “Scrum is founded on empiricism
-					and lean thinking. Empiricism asserts that knowledge comes from experience and making
-					decisions based on what is observed. Lean thinking reduces waste and focuses on the
-					essentials.”
+					Catching up with the reservation issues, programmers who create software to apply to the
+					needs of this life. These softwares help to minimize waste and maximize the efficiency of
+					jobs. These softwares can be customized to fit the needs of the company. And according to
+					the current survey, people's need to travel is increasing. People go away maybe for work,
+					travel, study, etc, but for whatever reason, they all need a place to stay.
 					<br />
 					<br />…
 					<br />
 					<br />
-					These are just a few of the things we've learnt throughout our four weeks of scrum
-					training.
+					Grasping those aspirations, our group implemented the topic "Building a website for online
+					booking hotels". In fact, hotel booking is still being done manually, however due to the
+					epidemic, high gas prices, etc, online hotel booking is a necessity.
 					<br />
-					We've been working on MoVila as a way to demonstrate what we've learnt about Scrum. Let's
-					explore MoVila.
+					We've been working on MoVila as a way to demonstrate what we've learnt about this
+					semester. Let's explore MoVila.
 				</div>
 			</section>
 			<section id='story'>
 				<div className='item1'>
 					<div className='block-1'>
 						<img src={story_banner_1} id='banner_1'></img>
-						<div className='content-block-1'>
-							Second week, we learned about Scrum events and Scrum artifacts. This is also the day
-							Scrum 101 appeared
-						</div>
+						<div className='content-block-1'>Teamwork is very important</div>
 					</div>
 				</div>
 				<div className='item2'>
@@ -53,17 +51,16 @@ const aboutpage = () => {
 					<div className='block-3'>
 						<img src={story_banner_2} id='banner_2'></img>
 						<div className='content-block-3'>
-							First week, we learnt about introduction to Agile and scrum framework as well as Scrum
-							foundations and Srum team
+							The project has been going on for a while and we have started from the smallest things
 						</div>
 					</div>
 				</div>
 				<div className='item4'>
 					<div className='block-4'>
-						Theory
+						Prepare
 						<br />
 						<br />
-						We were provided knowledge foundation about Scrum, Agile
+						Plan for project
 					</div>
 				</div>
 				<div className='item5'>
@@ -75,24 +72,23 @@ const aboutpage = () => {
 				<div className='item7'>
 					<div className='block-7'>
 						<img src={story_banner_4} id='banner_4'></img>
-						<div className='content-block-7'>We carried out Sprint 1 and Sprint 2 next week</div>
+						<div className='content-block-7'>
+							There are many issues when doing, but we tried our best to get solution
+						</div>
 					</div>
 				</div>
 				<div className='item8'>
 					<div className='content-block-8'>
-						Practice
+						Build MoVila website
 						<br />
 						<br />
-						The MoVila project is developed by Srum 101.
+						Code, test and fix bugs
 					</div>
 				</div>
 				<div className='item9'>
 					<div className='block-9'>
 						<img src={story_banner_5} id='banner_5'></img>
-						<div className='content-block-9'>
-							Final week, we completed Sprint 3 and presented our product-MoVila as well as share
-							how we worked in Scrum framework
-						</div>
+						<div className='content-block-9'>Finally, we've basically finished our website</div>
 					</div>
 				</div>
 				<div className='item10'>
