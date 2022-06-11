@@ -318,6 +318,79 @@ export const UseGetBillByID = (id) => {
 }
 
 export const UsePostAccount = () => {
+	class register_info {
+		constructor(name, acc, pass, pass_confirm, my_mail, my_phone) {
+			this.name = name
+			this.acc = acc
+			this.pass = pass
+			this.pass_confirm = pass_confirm
+			this.my_mail = my_mail
+			this.my_phone = my_phone
+		}
+
+		checkPass() {
+			if (this.pass === this.pass_confirm) {
+				return true
+			}
+			return false
+		}
+	}
+
+	class HandingData {
+		constructor(naccount, ninfo) {
+			this.data = {
+				account: naccount,
+				info: ninfo,
+			}
+		}
+
+		getData() {
+			return this.data
+		}
+	}
+
+	class HandingDataAdapter extends HandingData {
+		// input register_info
+		constructor(inputClass) {
+			super()
+			this.inputClass = inputClass
+		}
+
+		getfirstName() {
+			var my_name = this.inputClass.name.split(' ')
+			let firstName = ''
+			for (let i = 0; i < my_name.length - 1; i++) {
+				firstName += my_name[i] + ' '
+			}
+			return firstName
+		}
+
+		getlastName() {
+			var my_name = this.inputClass.name.split(' ')
+			let lastName = ''
+			if (my_name[my_name.length - 1]) {
+				lastName = my_name[my_name.length - 1]
+				return lastName
+			}
+		}
+
+		getData() {
+			return {
+				account: {
+					username: this.inputClass.acc,
+					password: this.inputClass.pass,
+					role: 'user',
+				},
+				user: {
+					firstName: this.getfirstName(),
+					lastName: this.getlastName(),
+					phone: this.inputClass.my_phone,
+					mail: this.inputClass.my_mail,
+				},
+			}
+		}
+	}
+
 	const [articleId, setArticleId] = useState(null)
 
 	function Register() {
@@ -328,35 +401,16 @@ export const UsePostAccount = () => {
 		var my_mail = document.getElementById('sign_up_mail').value
 		var my_phone = document.getElementById('sign_up_phone').value
 
-		if (pass != pass_confirm) {
+		let info_input = new register_info(name, acc, pass, pass_confirm, my_mail, my_phone)
+
+		if (!info_input.checkPass()) {
 			window.alert('Your password and confirm password not match!')
 			return ''
 		}
 
-		var my_name = name.split(' ')
-		let lastName = ''
-		if (my_name[my_name.length - 1]) {
-			lastName = my_name[my_name.length - 1]
-		}
+		let send_data = new HandingDataAdapter(info_input)
 
-		let firstName = ''
-		for (let i = 0; i < my_name.length - 1; i++) {
-			firstName += my_name[i] + ' '
-		}
-
-		const article = {
-			account: {
-				username: acc,
-				password: pass,
-				role: 'user',
-			},
-			user: {
-				firstName: firstName,
-				lastName: lastName,
-				phone: my_phone,
-				mail: my_mail,
-			},
-		}
+		const article = send_data.getData()
 
 		return axios.post(API_KEY + 'accounts/register/user', article).then((response) => {
 			setArticleId(response.data)
@@ -367,7 +421,6 @@ export const UsePostAccount = () => {
 
 	return <input type='submit' value='Sign up' onClick={Register} />
 }
-
 export const UsePostContact = () => {
 	const [articleId, setArticleId] = useState(null)
 
