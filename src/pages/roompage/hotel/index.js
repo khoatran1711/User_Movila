@@ -11,14 +11,16 @@ const hotel = (props) => {
 		<Link className='link' to={`/rooms/${props.id}`}>
 			<div className='hotel'>
 				<div className='img-hotel'>
-					<img src={props.image} />
+					<img src={props.imageURL} />
 				</div>
 				<div className='content-hotel'>
 					<div className='header-content-hotel'>
-						{props.type}
+						{props.name}
 						<div className='hotel-content-line'></div>
 					</div>
-					<div className='property-content-hotel'>{props.property}</div>
+					<div className='property-content-hotel'>
+						{props.cat} room - {props.price}${' '}
+					</div>
 					<div className='description-content-hotel'>{props.description}</div>
 				</div>
 			</div>

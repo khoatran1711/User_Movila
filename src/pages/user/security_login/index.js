@@ -1,20 +1,23 @@
 import react from 'react'
 import './styles.css'
+import { UsePutAccountPass } from '../../../DataQuery/Query.queries'
 
-const security_login = () => {
+const security_login = (props) => {
+	const Edit_btn = UsePutAccountPass(props.id, props.password)
+	console.log(props.id)
 	return (
 		<div>
 			<form>
 				<div className='title_security'>Your email: </div>
-				<div id='email'>khoatran@mail.com</div>
+				<div id='email'>{props.mail}</div>
 				<div className='title_security'>Your passwords: </div>
-				<input type='password' className='password' name='old_pass' />
+				<input id='old_pass' type='password' className='password' />
 				<div className='title_security'>Your new passwords: </div>
-				<input type='password' className='password' name='new_pass' />
+				<input id='new_pass' type='password' className='password' name='new_pass' />
 				<div className='title_security'>Confirm your passwords: </div>
-				<input type='password' className='password' name='confirm_new_pass' />
+				<input id='new_pass_confirm' type='password' className='password' name='confirm_new_pass' />
 				<br />
-				<input type='submit' value='Change your password' />
+				{Edit_btn}
 			</form>
 		</div>
 	)

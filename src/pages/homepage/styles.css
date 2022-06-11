@@ -235,3 +235,19 @@
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 1%;
   }
+
+  #discover_more{
+    width: 20vw;
+    height: 3vw;
+    background-color: #fdfbf4;
+    font-family: intrepid;
+    font-size: 1.2vw;
+    margin-left: 2vw;
+    margin-top: 2.4vw;
+    transition: 1s;
+    cursor: pointer;
+  }
+  #discover_more:hover{
+    padding-left: 2vw;
+
+  }

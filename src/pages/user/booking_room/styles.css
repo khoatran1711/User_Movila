@@ -8,6 +8,10 @@
 #Booking_rooms_area{
     margin-left: 2vw;
     margin-top: 1vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+    padding-bottom: 30px;
     
 }
 

@@ -6,8 +6,10 @@ import TextField from '@mui/material/TextField'
 import ContactImg from '../../assets/Contact/contact.jpg'
 import { MyMap } from '../../components'
 import './styles.css'
+import { UsePostContact } from '../../DataQuery/Query.queries'
 
 const Contact = () => {
+	const contact_btn = UsePostContact()
 	return (
 		<div className='contact'>
 			<section id='about_banner'>
@@ -97,30 +99,60 @@ const Contact = () => {
 			<div className='contact__form'>
 				<div className='form__left'>
 					<div className='form__input'>
-						<TextField id='standard-basic' label='Name *' variant='standard' />
+						<TextField
+							className='standard-basic'
+							id='standard-basic_name'
+							label='Name *'
+							variant='standard'
+						/>
 					</div>
 					<div className='form__input'>
-						<TextField id='standard-basic' label='Surname *' variant='standard' />
+						<TextField
+							className='standard-basic'
+							id='standard-basic_sur_name'
+							label='Surname *'
+							variant='standard'
+						/>
 					</div>
 					<div className='form__input'>
-						<TextField id='standard-basic' label='Phone *' variant='standard' />
+						<TextField
+							className='standard-basic'
+							id='standard-basic_phone'
+							label='Phone *'
+							variant='standard'
+						/>
 					</div>
 					<div className='form__input'>
-						<TextField id='standard-basic' label='Email *' variant='standard' />
+						<TextField
+							className='standard-basic'
+							id='standard-basic_email'
+							label='Email *'
+							variant='standard'
+						/>
 					</div>
 				</div>
 				<div className='form__right'>
 					<div className='form__input'>
-						<TextField id='standard-basic' label='Subject *' variant='standard' />
+						<TextField
+							className='standard-basic'
+							id='standard-basic_subject'
+							label='Subject *'
+							variant='standard'
+						/>
 					</div>
 					<div className='form__input'>
-						<TextField id='standard-basic' label='Message' variant='standard' multiline rows={6} />
+						<TextField
+							className='standard-basic'
+							id='standard-basic_message'
+							label='Message'
+							variant='standard'
+							multiline
+							rows={6}
+						/>
 					</div>
 				</div>
 			</div>
-			<button className='discovery-hotel'>
-				<a href='#'>Submit</a>
-			</button>
+			{contact_btn}
 		</div>
 	)
 }

@@ -60,7 +60,7 @@ const Footer = () => {
 								</li>
 								<li>
 									<Link to='/rooms'>
-										Accommodation
+										Reservation
 										<div className='footer-line'></div>
 									</Link>
 								</li>

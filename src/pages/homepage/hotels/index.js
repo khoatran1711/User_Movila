@@ -16,9 +16,6 @@ const hotels = (props) => {
 				<div className='property-content-hotel'>{props.property}</div>
 				<div className='description-content-hotel'>{props.description}</div>
 			</div>
-			<button className='discovery-hotel'>
-				<a href='#'>Discover More</a>
-			</button>
 		</div>
 	)
 }

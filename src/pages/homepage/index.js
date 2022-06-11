@@ -109,7 +109,7 @@ const homepage = () => {
 							for a truly immersive experience. Our Michelin-starred restaurant, fine wine cellar
 							and bar, cigar lounge and world-class spa complete this unforgettable experience.
 						</h6>
-						<button className='discovery-hotel'>Discover More</button>
+						<button id='discover_more'>Discover More</button>
 					</div>
 				</div>
 			</section>

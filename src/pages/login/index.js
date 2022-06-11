@@ -11,6 +11,7 @@ import { UsePostRoom } from '../../DataQuery/Query.queries'
 import { UseDeleteRoom } from '../../DataQuery/Query.queries'
 import { UsePutRoom } from '../../DataQuery/Query.queries'
 import { UseGetAccountLogin } from '../../DataQuery/Query.queries'
+import { UsePostAccount } from '../../DataQuery/Query.queries'
 import name from '../../Global'
 import { changeValue } from '../../Global'
 let flag = true
@@ -21,6 +22,7 @@ const Login = () => {
 	//const pu = UsePutRoom(3)
 	//Object.freeze(myInitObject)
 	const result = UseGetAccountLogin('a', 'b')
+	const sign_up = UsePostAccount()
 
 	return (
 		<div>
@@ -49,20 +51,20 @@ const Login = () => {
 								<br /> Get yourself a new account{' '}
 							</h1>
 							<h3>Your name</h3>
-							<input type='text' name='signup_name' />
+							<input id='sign_up_name' type='text' name='signup_name' />
 							<h3>Your account</h3>
-							<input type='text' name='signup_acc' />
+							<input id='sign_up_acc' type='text' name='signup_acc' />
 							<h3>Your password</h3>
-							<input type='text' name='signup_pas' />
+							<input id='sign_up_pass' type='text' name='signup_pas' />
 							<h3>Enter your password again</h3>
-							<input type='text' name='confirm_pas' />
+							<input id='sign_up_pass_confirm' type='text' name='confirm_pas' />
 							<h3>Your Phone</h3>
-							<input type='text' name='signup_phone' />
+							<input id='sign_up_phone' type='text' name='signup_phone' />
 							<h3>Your Mail</h3>
-							<input type='text' name='signup_mail' />
+							<input id='sign_up_mail' type='text' name='signup_mail' />
 							<br />
-							<input type='submit' value='Sign up' />
 						</form>
+						{sign_up}
 					</section>
 				</section>
 				<section id='login_banner'>
