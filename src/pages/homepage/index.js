@@ -9,6 +9,7 @@ import home_banner from '../../assets/home_banner.png'
 import content2_pic from '../../assets/content2_pic.jpg'
 import content_3_img from '../../assets/content_3_img.jpg'
 import content_3_img_2 from '../../assets/content_3_img_2.jpg'
+import Counter from '../../SIngleTon/single'
 
 const Hotels = lazy(() => import('./hotels'))
 
@@ -40,6 +41,8 @@ const hotels = [
 ]
 
 const homepage = () => {
+	//var ne = Counter(3)
+	console.log('get ' + Counter.getInstance())
 	return (
 		<div className='homepage'>
 			<section id='main_banner'>

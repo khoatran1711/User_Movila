@@ -215,16 +215,11 @@ export const UsePutAccountPass = (id, password) => {
 	function Edit() {
 		var accId = id
 		var pass = password
-		var old_pass = document.getElementById('old_pass').value
+
 		var new_pass = document.getElementById('new_pass').value
 		var confirm_new_pass = document.getElementById('new_pass_confirm').value
 
 		var flag = true
-
-		if (pass != old_pass) {
-			alert('Wrong Password!')
-			flag = false
-		}
 
 		if (new_pass != confirm_new_pass) {
 			alert('Your new password not match!')

@@ -1,1 +1,3 @@
-export const API_KEY = 'http://localhost:8083/'
+import API from '../SIngleTon/single'
+
+export const API_KEY = API.getInstance()
